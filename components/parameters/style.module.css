@@ -1,0 +1,180 @@
+.parameters{
+    width: 100%;
+    display: flex;
+}
+.scroll{
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+}
+.text{
+    height: 100px;
+    width: 100px;
+}
+.inputText{
+    padding: 10px 15px;
+    text-align: right;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+}
+.gradient{
+    min-width: 165px;
+    width: 95%;
+    padding: 2.5px;
+    margin: 4px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 10px 0;
+}
+.gradientImage{
+    margin: 5px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 1.5;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1.5;
+    border-radius: 10px;
+    background-color: blueviolet;
+}
+.contAudio{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.gradientAudio{
+    width: 90%;
+    height: 65px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+}
+.upload{
+    height: 57px;
+    aspect-ratio: 1;
+    margin:.5% 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.upload2{
+    height: 30%;
+    max-width: 55px;
+    max-height: 55px;
+    aspect-ratio: 1;
+    margin:.5% 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    top:5px;
+    left: 5px;
+
+}
+.lineCont{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 0 10px;
+}
+.line{
+    width: 101%;
+    background-color: rgb(255, 255, 255);
+    height: 5px;
+    border-radius: 100px;
+}
+.point{
+    width: 18px;
+    aspect-ratio: 1;
+    border-radius: 100px;
+}
+.position{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.duration{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.durationTime{
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 800;
+}
+.renderBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.gradientRender{
+    min-width: 200px;
+    width: 80%;
+    max-width: 350px;
+    padding: 3px;
+    border-radius: 20px;
+}
+.render{
+    border-radius: 20px;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    font-size: 37px;
+    font-weight: 900;
+    text-shadow: 1px 1px 5px rgba(125, 125, 125,.7);
+    padding: 8px;
+    text-align: center;
+}
+.tab{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 0 10px 0 ;
+}
+.tabText{
+    font-size: 22px;
+    font-weight: 800;
+    color: #000;
+}
+.tabActive{
+    padding: 5px;
+    font-size: 22px;
+    font-weight: 800;
+    color: #0ab2d0;
+    justify-content: center;
+    border-bottom-color: #0ab2d0;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+.tabNonActive{
+    padding: 5px;
+    font-size: 22px;
+    font-weight: 800;
+    justify-content: center;
+    margin: 0 10px;
+}

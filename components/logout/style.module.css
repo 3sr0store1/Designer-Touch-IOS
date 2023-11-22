@@ -1,0 +1,27 @@
+.logout{
+    width: 45%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gradient{
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.text{
+    color:rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 23px;
+    font-weight: 700;
+    margin: 0 7px;
+}

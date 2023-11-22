@@ -1,0 +1,40 @@
+.header{
+    margin-top: 20px;
+    padding: 5px 0px;
+    width: 100%;
+    z-index: 7777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.name{
+    color:rgb(0, 0, 0);
+    font-size: 28px;
+    font-weight: 900;
+}
+.back{
+    height: 100%;
+    width: 80px;
+    margin: 0px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    right: 0;
+}
+.icon{
+    height: 100%;
+    padding: 0;
+    width: 40px;
+    margin: -10px;
+}
+.backText{
+    color:rgb(50, 50, 50);
+    font-size: 25px;
+    font-weight: 800;
+    height: 100%;
+    z-index: 2;
+}

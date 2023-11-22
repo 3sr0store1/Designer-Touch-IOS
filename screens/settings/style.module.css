@@ -1,0 +1,82 @@
+.screen{
+    flex:1;
+    padding: 10px 10px 10px;
+    display: flex;
+    align-items: center;
+}
+.imageGradient{
+    padding: 3px;
+    width: 55%;
+    aspect-ratio: 1;
+    border-radius: 500px;
+    background-color: #0ab2d0;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    border-radius: 500px;
+    background-color: rgb(255, 255, 255);
+}
+.meta{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.data{
+    width: 95%;
+    display: flex;
+    margin: 2px 0;
+    border-bottom-width: .8px;
+    border-bottom-style: solid;
+    border-bottom-color:  #6c0581;
+    padding: 5px;
+}
+.key{
+    color:rgb(20, 20, 20);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: right;
+
+}
+.value{
+    color:rgb(0, 0, 0);
+    font-size: 23px;
+    font-weight: 700;
+    text-align: right;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 9%;
+}
+.btn{
+    width: 45%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 5% ;
+}
+.planGradient{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.plan{
+    color:rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 23px;
+    font-weight: 700;
+    margin: 0 7px;
+}

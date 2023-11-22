@@ -1,0 +1,53 @@
+.page{
+    flex:1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    padding: 80px 10px 0;
+}
+.scroll{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.navigatorStyle{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    display: flex;
+}
+.navigator{
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+.tab{
+    height: 50px;
+    margin: 0 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.activeTab{
+    height: 50px;
+    margin: 0 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-color: #6c0581;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+.tabText{
+    font-size: 22px;
+    font-weight: 900;
+    padding: 5px;
+}
+.tabTextActive{
+    font-size: 22px;
+    font-weight: 900;
+    padding: 5px;
+    color: #6c0581;
+}

@@ -1,0 +1,93 @@
+.screen{
+    flex:1;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+.inputBox{
+    width: 80%;
+    height: 75px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text{
+    color: #ffffff;
+    font-size: 30px;
+}
+.inputText{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+}
+.input{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 70%;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+    border: 1px solid rgb(150, 150, 150);
+}
+.image{
+    width: 80%;
+    height: 37%;
+    object-fit: contain;
+}
+.logIn{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.button{
+    padding: 10px;
+    border-radius: 15px;
+    width: 80%;
+    height: 60px;
+    text-align: center;
+    margin: 20px 0;
+}
+.icons{
+    width: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9900ff;
+    margin: 5px;
+}
+.signUpBox{
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.Text{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 600;
+    direction: rtl;
+}
+.signUp{
+    font-size: 20px;
+    font-weight: 600;
+    color: #0ab2d0;
+}
