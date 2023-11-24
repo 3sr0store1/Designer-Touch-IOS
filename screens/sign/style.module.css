@@ -3,7 +3,6 @@
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
-    /* background-color: #9900ff; */
 }
 .inputBox{
     width: 80%;
@@ -21,6 +20,7 @@
     color: #000000;
     font-size: 20px;
     font-weight: 700;
+    text-align: right;
 }
 .input{
     background-color: rgb(255, 255, 255);

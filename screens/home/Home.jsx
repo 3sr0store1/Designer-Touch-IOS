@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { Text, View, Pressable, ScrollView } from "react-native";
+import { Text, View, Pressable, ScrollView, Platform } from "react-native";
 import { useLinkTo, useRoute } from "@react-navigation/native";
 import style from "./style.module.css";
 import { useSelector, useDispatch } from "react-redux";
@@ -18,7 +18,7 @@ const Category = ({ route }) => {
       .filter((design) => design.categoryName == category)
       .sort((a, b) => (a.time > b.time ? -1 : 1));
   return (
-    <View style={style.page}>
+    <View style={{ ...style.page, marginTop: Platform.OS == "ios" ? 5 : 0 }}>
       <ScrollView contentContainerStyle={style.scroll} scrollEnabled>
         {designsCategory.map((design) => (
           <Card design={design} key={design.id} />
@@ -55,7 +55,7 @@ const TabBar = ({ categories }) => {
       }
       scrollEnabled
       contentContainerStyle={style.navigator}
-      style={style.navigatorStyle}
+      style={{...style.navigatorStyle, top: Platform.OS == "ios" ? 35 : 20  }}
     >
       {categories.map((category, index) => (
         <TabButton

@@ -63,9 +63,11 @@ const Welcome = () => {
             colors={["#6c0581", "#0ab2d0"]}
             start={{ x: 0.2, y: 0.2 }}
             locations={[0, 1]}
-            style={style.pbutton}
+            style={style.button}
           >
-            <Text style={style.pass}>استمر بدون حساب</Text>
+            <View style={style.passView}>
+              <Text style={style.pass}>استمر بدون حساب</Text>
+            </View>
           </LinearGradient>
         </Pressable>
       </View>

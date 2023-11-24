@@ -18,8 +18,7 @@
     font-size: 30px;
 }
 .logIn,
-.signUp,
-.pass{
+.signUp{
     color: #ffffff;
     font-size: 32px;
     padding: 5px;
@@ -27,20 +26,22 @@
     font-weight: 900;
     text-align: center;
 }
-.pbutton{
-    border-radius: 15px;
-    min-width: 280px;
+.passView{
+    min-width: 270px;
     width:65%;
-    max-width: 320px;
-    text-align: center;
-    margin: 5px;
-    padding: 5px;
-    background-color: #ffffff;
-    box-sizing: border-box;
+    max-width: 310px;
+    border-radius: 10px;
+    background-color: #ffffff;  
 }
 .pass{
     background-color: #ffffff;
     color: #6c0581;
+    padding: 5px;
+    font-weight: 900;
+    text-align: center;
+    font-size: 32px;
+    border-radius: 10px;
+
 }
 .button{
     border-radius: 15px;

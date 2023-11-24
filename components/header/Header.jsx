@@ -1,4 +1,4 @@
-import { Text, View, Pressable } from "react-native";
+import { Text, View, Pressable, Platform } from "react-native";
 import style from "./style.module.css";
 import { Feather } from "@expo/vector-icons";
 import { Fragment } from "react";
@@ -20,7 +20,9 @@ const Header = ({ name, goBack, canGoBack }) => {
         name != "App" &&
         name != "Welcome" &&
         name != "Plans" && (
-          <View style={style.header}>
+          <View
+            style={{ ...style.header, marginTop: Platform.OS == "ios" ? 35 : 20 }}
+          >
             <Text style={style.name}>{tanslate[name]}</Text>
             <Pressable
               style={style.back}

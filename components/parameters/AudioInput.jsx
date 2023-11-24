@@ -21,12 +21,15 @@ const AudioInput = ({ name, defaultValue, setter, designId }) => {
   useEffect(() => {
     const directory = FileSystem.documentDirectory;
     FileSystem.readDirectoryAsync(directory).then(async (files) => {
-      if (!files?.includes(`${designId}_${name}.mp3`))
+      if (!files?.includes(`${designId}_${name}.mp3`)) {
         await FileSystem.downloadAsync(
           defaultValue,
           `${directory}${designId}_${name}.mp3`
         );
-      setAudio({ url: `${directory}${designId}_${name}.mp3`, done: true });
+        setAudio({ url: `${directory}${designId}_${name}.mp3`, done: true });
+      } else {
+        setAudio({ url: `${directory}${designId}_${name}.mp3`, done: true });
+      }
     });
   }, [name, designId, defaultValue]);
 
@@ -38,6 +41,7 @@ const AudioInput = ({ name, defaultValue, setter, designId }) => {
     });
     return unsubscribe;
   }, [navigation]);
+
   const shadow = {
     shadowColor: "#000",
     shadowOffset: {
@@ -52,6 +56,7 @@ const AudioInput = ({ name, defaultValue, setter, designId }) => {
   style.point = { ...style.point, ...shadow };
   style.upload = { ...style.upload, ...shadow };
   style.gradientAudio = { ...style.gradientAudio, ...shadow };
+
   const formateTime = (number) => {
     const minutes = `${Math.floor(Number(number / 60000))}`;
     number -= minutes * 60000;
@@ -64,7 +69,7 @@ const AudioInput = ({ name, defaultValue, setter, designId }) => {
       sound?.stopAsync();
       setIsPlay(false);
       setIsLoad(true);
-      Audio.Sound.createAsync({ uri: audio }, {}, (status) => {
+      Audio.Sound.createAsync({ uri: audio.url }, {}, (status) => {
         if (status.isLoaded) {
           setIsLoad(false);
           setDuration(status.durationMillis);
@@ -78,9 +83,11 @@ const AudioInput = ({ name, defaultValue, setter, designId }) => {
     if (isPlay) sound?.playAsync();
     else sound?.pauseAsync();
   }, [isPlay]);
+
   useEffect(() => {
     if (!isTouch) setPosition(time / duration);
   }, [time, duration]);
+
   const moveTouch = async (event) => {
     if (!isLoad) {
       setIsTouch(true);
@@ -96,6 +103,7 @@ const AudioInput = ({ name, defaultValue, setter, designId }) => {
       setTimeout(() => setIsTouch(false), 5000);
     }
   };
+
   const upload = async () => {
     let { assets, canceled } = await DocumentPicker.getDocumentAsync({
       type: "audio/*",
