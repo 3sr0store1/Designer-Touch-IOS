@@ -7,7 +7,7 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
-    "preview": "eas build --platform ios"
+    "preview": "eas build --platform ios && eas submit -p ios --latest"
   },
   "dependencies": {
     "@expo/vector-icons": "^13.0.0",
