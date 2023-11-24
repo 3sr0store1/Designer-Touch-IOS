@@ -63,7 +63,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.mostafaebrahem0353.designertouch",
-      "buildNumber":"2",
+      "buildNumber":"1.01",
       "config": {
         "usesNonExemptEncryption": false
       },
